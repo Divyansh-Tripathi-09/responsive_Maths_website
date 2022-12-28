@@ -1,0 +1,264 @@
+
+body{
+    font: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#container{
+    width:90%;
+    border: 1px solid grey;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+   
+}
+
+#header{
+/*    height: 100px;*/
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+#brand{
+   /* float:left;*/
+    flex: 50%;
+    min-width: 400px;
+}
+
+
+h1 a{
+    font-size: 50px;
+    font-weight: 100;
+    color: #861BBF;
+    text-decoration: none;
+}
+
+
+#searchBox{
+   /* float:right; */
+    flex: 50%;
+    background: linear-gradient(#E4F2B9, #B7E953);
+    background: -webkit-linear-gradient(#E4F2B9, #B7E953);
+    background: -o-linear-gradient(#E4F2B9, #B7E953);
+    background: -moz-linear-gradient(#E4F2B9, #B7E953);
+    min-width: 400px;
+   /* height: 50px; */
+    padding: 20px;
+    /*margin-top: 20px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.text{
+    float: left;
+    width: 200px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    background: white url(iamges/search.png) right center no-repeat;
+    border: 1px solid #CBD83E
+    
+}
+.submit
+{
+    float: right;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    background: #A751D6;
+    font-size: 15px;
+    
+}
+.clear{
+    clear: both;
+}
+#menu{
+/*    height: 70px;*/
+    background: linear-gradient(#F8F594,#D5D533);
+    background: -webkit-linear-gradient(#F8F594,#D5D533);
+    background: -o-linear-gradient(#F8F594,#D5D533);
+    background: -moz-linear-gradient(#F8F594,#D5D533);
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+#menu a{
+/*    float: left;*/
+    padding: 0 30px;
+    height:30px;
+    border-right: 1px solid #5d12e7 
+
+}
+
+#menu a:last-child{
+    border-right: none;
+}
+
+#menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #5d12e7;
+    line-height: 30px;
+    -moz-transition: font-size 0.3s ease;
+    -o-transition: font-size 0.3s ease;
+    -ms-transition: font-size 0.3s ease;
+    -webkit-transition: font-size 0.3s ease;
+    transition: font-size 0.3s ease;
+}
+
+#menu a:hover, #menu a.active{
+    font-size: 25px;
+    color: #b314db;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 700px){
+    #menu{
+    fles-direction: column;
+    align-content: center;
+    
+}
+    #menu a{
+     border-right: none;   
+    }
+}
+
+#introduction{
+    background: linear-gradient(#e5f2bb,#b7e959);
+    background: -webkit-linear-gradient(#e5f2bb,#b7e959);
+    background: -o-linear-gradient(#e5f2bb,#b7e959);
+    background: -moz-linear-gradient(#e5f2bb,#b7e959);
+    padding: 30px;
+    margin:16px 0;
+}
+
+#introduction{
+ font-size: 45px;
+    color: #316901;
+    font-weight: normal;
+}
+
+#introduction p{
+ font-size: 25px;
+    color: #628f19;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.sidebars{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sidebarWrapper{
+    padding: 5px;
+    flex: 50%;
+}
+.sidebar{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #BAF46F;
+    border-radius: 20px;
+    padding: 10px 30px;
+/*    flex: 50%;*/
+    
+}
+.sidebar h3{
+    color: purple;
+    font-size: 30px;
+}
+
+#leftsidebar ul li{
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-top: 8px;
+    list-style-image: url(iamges/arrow.png);
+}
+
+#rightsidebar ul li{
+    padding: 0px 0 20px 7px;
+    
+    list-style-image: url(iamges/tick.png) 
+}
+
+.sidebar ul{
+    padding-top: 8px;
+
+}
+.sidebar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color:green;
+     -moz-transition: font-size 0.3s ease;
+    -o-transition: font-size 0.3s ease;
+    -ms-transition: font-size 0.3s ease;
+    -webkit-transition: font-size 0.3s ease;
+    transition: font-size 0.3s ease;
+}
+
+.sidebar ul li a:hover, .sidebar ul li a.active{
+    text-decoration: none;
+    color: #B324DB;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+
+
+/*
+#leftsidebar{
+    float: left;
+}
+
+#rightsidebar{
+    float: right;
+}
+*/
+
+
+.footer{
+    height: 60px;
+    background: linear-gradient(#F6F390,#D5D533);
+    background: -webkit-linear-gradient(#F6F390,#D5D533);
+    background: -o-linear-gradient(#F6F390,#D5D533);
+    background: -moz-linear-gradient(#F6F390,#D5D533);
+    padding: 10px 30px;
+    margin-top: auto;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
